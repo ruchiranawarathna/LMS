@@ -1,0 +1,62 @@
+25 Jul 2019 19:15:20,455 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ========================================================
+25 Jul 2019 19:15:20,456 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ============== mChoice SDP Simulator Stopped ===========
+25 Jul 2019 19:15:20,456 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ========================================================
+25 Jul 2019 19:15:21,222 INFO  [][Thread-1] / - Closing Spring root WebApplicationContext
+25 Jul 2019 19:15:26,780 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+25 Jul 2019 19:15:26,781 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ============= mChoice SDP Simulator Started ============
+25 Jul 2019 19:15:26,781 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+25 Jul 2019 19:15:26,802 INFO  [][Thread-0] JettyServerStarter - Starting mChoice SDP SDK Server on Port[10001]
+25 Jul 2019 19:15:27,780 INFO  [][Thread-0] / - Initializing Spring root WebApplicationContext
+25 Jul 2019 19:16:34,804 WARN  [][qtp1406968416-25] JsonBodyProvider - Null value received no way to parse this.
+25 Jul 2019 19:16:34,817 ERROR [][qtp1406968416-25] AbstractFaultChainInitiatorObserver - Error occurred during error handling, give up!
+org.apache.cxf.interceptor.Fault
+	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:122)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:344)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:310)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:943)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:879)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at hms.kite.simulator.sms.SmsMessageReceiver.onMessage(SmsMessageReceiver.java:44)
+	at hms.kite.simulator.rest.SmsNcsRestService.sendService(SmsNcsRestService.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	... 25 more
+25 Jul 2019 19:18:23,297 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ========================================================
+25 Jul 2019 19:18:23,298 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ============== mChoice SDP Simulator Stopped ===========
+25 Jul 2019 19:18:23,298 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ========================================================
+25 Jul 2019 19:18:24,069 INFO  [][Thread-1] / - Closing Spring root WebApplicationContext
+25 Jul 2019 19:18:32,939 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+25 Jul 2019 19:18:32,940 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ============= mChoice SDP Simulator Started ============
+25 Jul 2019 19:18:32,940 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+25 Jul 2019 19:18:32,964 INFO  [][Thread-0] JettyServerStarter - Starting mChoice SDP SDK Server on Port[10001]
+25 Jul 2019 19:18:34,037 INFO  [][Thread-0] / - Initializing Spring root WebApplicationContext
+25 Jul 2019 19:31:31,697 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ========================================================
+25 Jul 2019 19:31:31,716 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ============== mChoice SDP Simulator Stopped ===========
+25 Jul 2019 19:31:31,716 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ========================================================
+25 Jul 2019 19:31:32,480 INFO  [][Thread-1] / - Closing Spring root WebApplicationContext

@@ -1,0 +1,1284 @@
+STATUS | wrapper  | 2019/07/25 14:53:57 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/07/25 14:53:58 | Launching a JVM...
+INFO   | jvm 1    | 2019/07/25 14:53:58 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/07/25 14:53:58 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/07/25 14:53:58 | 
+INFO   | jvm 1    | 2019/07/25 14:53:59 | 14:53:59,276 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 14:53:59 | 14:53:59,279 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2019/07/25 14:53:59 | 14:53:59,279 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 14:53:59 | 14:53:59,367 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2019/07/25 14:54:00 | 14:54:00,545 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2019/07/25 14:54:00 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2019/07/25 14:54:00 | SLF4J: Found binding in [jar:file:/tmp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/25 14:54:00 | SLF4J: Found binding in [jar:file:/home/hsenid/Downloads/ideamart_developer_bundle/IdeaMart%20Simulator-v2.2/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/25 14:54:00 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2019/07/25 14:54:01 | WARNING: An illegal reflective access operation has occurred
+INFO   | jvm 1    | 2019/07/25 14:54:01 | WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1 (file:/tmp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/jaxb-impl-2.2.5.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+INFO   | jvm 1    | 2019/07/25 14:54:01 | WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1
+INFO   | jvm 1    | 2019/07/25 14:54:01 | WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+INFO   | jvm 1    | 2019/07/25 14:54:01 | WARNING: All illegal access operations will be denied in a future release
+INFO   | jvm 1    | 2019/07/25 15:15:03 | Message key not found []
+INFO   | jvm 1    | 2019/07/25 15:15:03 | Message key not found []
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 15:17:35,983 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564048055982, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=this is a message to me, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 15:17:36,105 ERROR AtRequestSender -  Error while sending message to application or application may not available for given port
+INFO   | jvm 1    | 2019/07/25 15:17:36 | org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:807)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:743)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:717)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:262)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:271)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:89)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at hms.kite.simulator.sms.SmsMessageSender.sendMessage(SmsMessageSender.java:44)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at hms.kite.simulator.webui.ui.services.impl.SmsNcsService.sendMessage(SmsNcsService.java:37)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at hms.kite.simulator.webui.ui.tab.impl.TabViewSmsImpl$2.buttonClick(TabViewSmsImpl.java:125)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at com.vaadin.ui.Button.fireClick(Button.java:380)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | Caused by: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:501)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:488)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:800)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 15:17:36 | Caused by: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:795)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 15:17:36 | Caused by: java.net.ConnectException: ConnectException invoking http://localhost:5556/mo-receiver: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1457)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1442)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:658)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	... 47 more
+INFO   | jvm 1    | 2019/07/25 15:17:36 | Caused by: java.net.ConnectException: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/java.net.Socket.connect(Socket.java:591)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1356)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1331)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1394)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1336)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1414)
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 	... 50 more
+INFO   | jvm 1    | 2019/07/25 15:17:36 | 15:17:36,110 INFO TabViewSmsImpl -  SMS sending status : Failed ........
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 15:18:36,653 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564048116653, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=this is a message to me, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 15:18:36,655 ERROR JAXRSClientFactoryBean -  java.lang.IllegalArgumentException : Illegal character in path at index 22: http://localhost:7000/ subscription/send
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 15:18:36,655 ERROR AtRequestSender -  Error while sending message to application or application may not available for given port
+INFO   | jvm 1    | 2019/07/25 15:18:36 | java.lang.RuntimeException: java.lang.IllegalArgumentException: Illegal character in path at index 22: http://localhost:7000/ subscription/send
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.apache.cxf.jaxrs.client.JAXRSClientFactoryBean.createWebClient(JAXRSClientFactoryBean.java:217)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.apache.cxf.jaxrs.client.WebClient.create(WebClient.java:143)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.apache.cxf.jaxrs.client.WebClient.create(WebClient.java:116)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:85)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at hms.kite.simulator.sms.SmsMessageSender.sendMessage(SmsMessageSender.java:44)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at hms.kite.simulator.webui.ui.services.impl.SmsNcsService.sendMessage(SmsNcsService.java:37)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at hms.kite.simulator.webui.ui.tab.impl.TabViewSmsImpl$2.buttonClick(TabViewSmsImpl.java:125)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at com.vaadin.ui.Button.fireClick(Button.java:380)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 22: http://localhost:7000/ subscription/send
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/java.net.URI.create(URI.java:883)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.apache.cxf.jaxrs.client.WebClient.<init>(WebClient.java:73)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at org.apache.cxf.jaxrs.client.JAXRSClientFactoryBean.createWebClient(JAXRSClientFactoryBean.java:208)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	... 43 more
+INFO   | jvm 1    | 2019/07/25 15:18:36 | Caused by: java.net.URISyntaxException: Illegal character in path at index 22: http://localhost:7000/ subscription/send
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/java.net.URI$Parser.fail(URI.java:2915)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/java.net.URI$Parser.checkChars(URI.java:3086)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3168)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/java.net.URI$Parser.parse(URI.java:3116)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/java.net.URI.<init>(URI.java:600)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	at java.base/java.net.URI.create(URI.java:881)
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 15:18:36 | 15:18:36,657 INFO TabViewSmsImpl -  SMS sending status : Failed ........
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 15:41:08,429 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564049468429, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=this is a message to me, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 15:41:08,434 ERROR AtRequestSender -  Error while sending message to application or application may not available for given port
+INFO   | jvm 1    | 2019/07/25 15:41:08 | org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:807)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:743)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:717)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:262)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:271)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:89)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at hms.kite.simulator.sms.SmsMessageSender.sendMessage(SmsMessageSender.java:44)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at hms.kite.simulator.webui.ui.services.impl.SmsNcsService.sendMessage(SmsNcsService.java:37)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at hms.kite.simulator.webui.ui.tab.impl.TabViewSmsImpl$2.buttonClick(TabViewSmsImpl.java:125)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at com.vaadin.ui.Button.fireClick(Button.java:380)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | Caused by: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:501)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:488)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:800)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 15:41:08 | Caused by: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:795)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 15:41:08 | Caused by: java.net.ConnectException: ConnectException invoking http://localhost:8080/Receiver: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1457)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1442)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:658)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	... 47 more
+INFO   | jvm 1    | 2019/07/25 15:41:08 | Caused by: java.net.ConnectException: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/java.net.Socket.connect(Socket.java:591)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1356)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1331)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1394)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1336)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1414)
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 	... 50 more
+INFO   | jvm 1    | 2019/07/25 15:41:08 | 15:41:08,438 INFO TabViewSmsImpl -  SMS sending status : Failed ........
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 15:42:50,846 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564049570846, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=this is a message to me, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 15:42:50,849 ERROR AtRequestSender -  Error while sending message to application or application may not available for given port
+INFO   | jvm 1    | 2019/07/25 15:42:50 | org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:807)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:743)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:717)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:262)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:271)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:89)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at hms.kite.simulator.sms.SmsMessageSender.sendMessage(SmsMessageSender.java:44)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at hms.kite.simulator.webui.ui.services.impl.SmsNcsService.sendMessage(SmsNcsService.java:37)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at hms.kite.simulator.webui.ui.tab.impl.TabViewSmsImpl$2.buttonClick(TabViewSmsImpl.java:125)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at com.vaadin.ui.Button.fireClick(Button.java:380)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | Caused by: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:501)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:488)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:800)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 15:42:50 | Caused by: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:795)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 15:42:50 | Caused by: java.net.ConnectException: ConnectException invoking http://localhost:5557/mo-receiver: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1457)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1442)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:658)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	... 47 more
+INFO   | jvm 1    | 2019/07/25 15:42:50 | Caused by: java.net.ConnectException: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/java.net.Socket.connect(Socket.java:591)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1356)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1331)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1394)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1336)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1414)
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 	... 50 more
+INFO   | jvm 1    | 2019/07/25 15:42:50 | 15:42:50,852 INFO TabViewSmsImpl -  SMS sending status : Failed ........
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 15:43:44,998 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564049624998, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=this is a message to me, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 15:43:45,003 ERROR AtRequestSender -  Error while sending message to application or application may not available for given port
+INFO   | jvm 1    | 2019/07/25 15:43:45 | org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:807)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:743)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:717)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:262)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:271)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:89)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at hms.kite.simulator.sms.SmsMessageSender.sendMessage(SmsMessageSender.java:44)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at hms.kite.simulator.webui.ui.services.impl.SmsNcsService.sendMessage(SmsNcsService.java:37)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at hms.kite.simulator.webui.ui.tab.impl.TabViewSmsImpl$2.buttonClick(TabViewSmsImpl.java:125)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at com.vaadin.ui.Button.fireClick(Button.java:380)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | Caused by: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:501)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:488)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:800)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 15:43:45 | Caused by: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:795)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 15:43:45 | Caused by: java.net.ConnectException: ConnectException invoking http://localhost:9000/api/books: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1457)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1442)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:658)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	... 47 more
+INFO   | jvm 1    | 2019/07/25 15:43:45 | Caused by: java.net.ConnectException: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/java.net.Socket.connect(Socket.java:591)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1356)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1331)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1394)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1336)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1414)
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 	... 50 more
+INFO   | jvm 1    | 2019/07/25 15:43:45 | 15:43:45,006 INFO TabViewSmsImpl -  SMS sending status : Failed ........
+INFO   | jvm 1    | 2019/07/25 15:44:23 | 15:44:23,172 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564049663172, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=this is a message to me, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 15:44:23 | 15:44:23,180 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 15:44:23 | 15:44:23,182 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 15:44:30 | 15:44:30,396 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564049670396, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=this is a message to me, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 15:44:30 | 15:44:30,400 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 15:44:30 | 15:44:30,401 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 15:45:37 | 15:45:37,465 INFO AtRequestSender -  Response: {"requestId":"11907251545378929","statusDetail":"Default Error has occurred.","version":"1.0","statusCode":"E1300"}
+INFO   | jvm 1    | 2019/07/25 15:45:37 | 15:45:37,465 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 15:45:37 | 15:45:37,465 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 15:46:04 | 15:46:04,059 INFO AtRequestSender -  Response: {"requestId":"11907251546042180","statusDetail":"Default Error has occurred.","version":"1.0","statusCode":"E1300"}
+INFO   | jvm 1    | 2019/07/25 15:46:04 | 15:46:04,059 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 15:46:04 | 15:46:04,059 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 15:46:13 | 15:46:13,418 INFO AtRequestSender -  Response: {"requestId":"11907251546132925","statusDetail":"Default Error has occurred.","version":"1.0","statusCode":"E1300"}
+INFO   | jvm 1    | 2019/07/25 15:46:13 | 15:46:13,418 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 15:46:13 | 15:46:13,418 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 15:46:36 | 15:46:36,216 INFO AtRequestSender -  Response: {"requestId":"11907251546364881","statusDetail":"Default Error has occurred.","version":"1.0","statusCode":"E1300"}
+INFO   | jvm 1    | 2019/07/25 15:46:36 | 15:46:36,216 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 15:46:36 | 15:46:36,216 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 16:11:32 | 16:11:32,707 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564051292707, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=this is a message to me, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 16:11:32 | 16:11:32,740 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564051292707, encoding=0, applicationId=APP_000001, message=this is a message to me, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190725161132, address=null, requestId=1564051292738, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564051292738, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/25 16:11:32 | 16:11:32,744 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 16:11:32 | 16:11:32,744 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 16:36:50 | 16:36:50,855 INFO AtRequestSender -  Response: {"requestId":"11907251636507348","statusDetail":"Default Error has occurred.","version":"1.0","statusCode":"E1300"}
+INFO   | jvm 1    | 2019/07/25 16:36:50 | 16:36:50,855 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 16:36:50 | 16:36:50,855 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 16:36:52 | 16:36:52,211 INFO AtRequestSender -  Response: {"requestId":"11907251636527473","statusDetail":"Default Error has occurred.","version":"1.0","statusCode":"E1300"}
+INFO   | jvm 1    | 2019/07/25 16:36:52 | 16:36:52,211 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 16:36:52 | 16:36:52,211 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 18:35:39,954 WARN JsonBodyProvider -  Null value received no way to parse this.
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 18:35:39,958 ERROR AbstractFaultChainInitiatorObserver -  Error occurred during error handling, give up!
+INFO   | jvm 1    | 2019/07/25 18:35:40 | org.apache.cxf.interceptor.Fault
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:122)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:344)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:310)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:943)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:879)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | Caused by: java.lang.NullPointerException
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at hms.kite.simulator.sms.SmsMessageReceiver.decodeMessage(SmsMessageReceiver.java:165)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at hms.kite.simulator.sms.SmsMessageReceiver.onMessage(SmsMessageReceiver.java:46)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at hms.kite.simulator.rest.SmsNcsRestService.sendService(SmsNcsRestService.java:36)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+INFO   | jvm 1    | 2019/07/25 18:35:40 | 	... 25 more
+INFO   | jvm 1    | 2019/07/25 18:36:27 | 18:36:27,249 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564059987249, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=this is a message , version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 18:36:27 | 18:36:27,253 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564059987249, encoding=0, applicationId=APP_000001, message=this is a message , version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190725183627, address=null, requestId=1564059987253, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564059987253, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/25 18:36:27 | 18:36:27,255 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 18:36:27 | 18:36:27,255 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 18:37:58,925 WARN JsonBodyProvider -  Null value received no way to parse this.
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 18:37:58,926 ERROR AbstractFaultChainInitiatorObserver -  Error occurred during error handling, give up!
+INFO   | jvm 1    | 2019/07/25 18:37:58 | org.apache.cxf.interceptor.Fault
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:122)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:344)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:310)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:943)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:879)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | Caused by: java.lang.NullPointerException
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at hms.kite.simulator.sms.SmsMessageReceiver.decodeMessage(SmsMessageReceiver.java:165)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at hms.kite.simulator.sms.SmsMessageReceiver.onMessage(SmsMessageReceiver.java:46)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at hms.kite.simulator.rest.SmsNcsRestService.sendService(SmsNcsRestService.java:36)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+INFO   | jvm 1    | 2019/07/25 18:37:58 | 	... 25 more
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 18:39:13,326 WARN JsonBodyProvider -  Null value received no way to parse this.
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 18:39:13,326 ERROR AbstractFaultChainInitiatorObserver -  Error occurred during error handling, give up!
+INFO   | jvm 1    | 2019/07/25 18:39:13 | org.apache.cxf.interceptor.Fault
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:122)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:344)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:310)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:943)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:879)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | Caused by: java.lang.NullPointerException
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at hms.kite.simulator.sms.SmsMessageReceiver.decodeMessage(SmsMessageReceiver.java:165)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at hms.kite.simulator.sms.SmsMessageReceiver.onMessage(SmsMessageReceiver.java:46)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at hms.kite.simulator.rest.SmsNcsRestService.sendService(SmsNcsRestService.java:36)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+INFO   | jvm 1    | 2019/07/25 18:39:13 | 	... 25 more
+INFO   | jvm 1    | 2019/07/25 18:40:52 | 18:40:52,742 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564060252742, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=this is a message , version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 18:40:52 | 18:40:52,756 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564060252742, encoding=0, applicationId=APP_000001, message=this is a message , version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190725184052, address=null, requestId=1564060252756, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564060252756, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/25 18:40:52 | 18:40:52,758 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 18:40:52 | 18:40:52,758 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 18:45:29,013 WARN JsonBodyProvider -  Null value received no way to parse this.
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 18:45:29,015 ERROR AbstractFaultChainInitiatorObserver -  Error occurred during error handling, give up!
+INFO   | jvm 1    | 2019/07/25 18:45:29 | org.apache.cxf.interceptor.Fault
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:122)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:344)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:310)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:943)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:879)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | Caused by: java.lang.NullPointerException
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at hms.kite.simulator.sms.SmsMessageReceiver.decodeMessage(SmsMessageReceiver.java:165)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at hms.kite.simulator.sms.SmsMessageReceiver.onMessage(SmsMessageReceiver.java:46)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at hms.kite.simulator.rest.SmsNcsRestService.sendService(SmsNcsRestService.java:36)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+INFO   | jvm 1    | 2019/07/25 18:45:29 | 	... 25 more
+STATUS | wrapper  | 2019/07/25 18:45:40 | INT trapped.  Shutting down.
+INFO   | jvm 1    | 2019/07/25 18:45:40 | 18:45:40,276 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 18:45:40 | 18:45:40,277 INFO MchoiceSdpSdkStarter -  ============== mChoice SDP Simulator Stopped ===========
+INFO   | jvm 1    | 2019/07/25 18:45:40 | 18:45:40,277 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 18:45:41 | 18:45:41,057 INFO / -  Closing Spring root WebApplicationContext
+STATUS | wrapper  | 2019/07/25 18:45:41 | <-- Wrapper Stopped
+STATUS | wrapper  | 2019/07/25 18:45:59 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/07/25 18:45:59 | Launching a JVM...
+INFO   | jvm 1    | 2019/07/25 18:46:00 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/07/25 18:46:00 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/07/25 18:46:00 | 
+INFO   | jvm 1    | 2019/07/25 18:46:00 | 18:46:00,721 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 18:46:00 | 18:46:00,724 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2019/07/25 18:46:00 | 18:46:00,724 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 18:46:00 | 18:46:00,791 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2019/07/25 18:46:02 | 18:46:01,965 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2019/07/25 18:46:02 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2019/07/25 18:46:02 | SLF4J: Found binding in [jar:file:/tmp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/25 18:46:02 | SLF4J: Found binding in [jar:file:/home/hsenid/Downloads/ideamart_developer_bundle/IdeaMart%20Simulator-v2.2/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/25 18:46:02 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2019/07/25 18:46:02 | WARNING: An illegal reflective access operation has occurred
+INFO   | jvm 1    | 2019/07/25 18:46:02 | WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1 (file:/tmp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/jaxb-impl-2.2.5.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+INFO   | jvm 1    | 2019/07/25 18:46:02 | WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1
+INFO   | jvm 1    | 2019/07/25 18:46:02 | WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+INFO   | jvm 1    | 2019/07/25 18:46:02 | WARNING: All illegal access operations will be denied in a future release
+STATUS | wrapper  | 2019/07/25 18:48:37 | INT trapped.  Shutting down.
+INFO   | jvm 1    | 2019/07/25 18:48:37 | 18:48:37,118 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 18:48:37 | 18:48:37,119 INFO MchoiceSdpSdkStarter -  ============== mChoice SDP Simulator Stopped ===========
+INFO   | jvm 1    | 2019/07/25 18:48:37 | 18:48:37,119 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 18:48:37 | 18:48:37,884 INFO / -  Closing Spring root WebApplicationContext
+STATUS | wrapper  | 2019/07/25 18:48:38 | <-- Wrapper Stopped
+STATUS | wrapper  | 2019/07/25 18:51:33 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/07/25 18:51:34 | Launching a JVM...
+INFO   | jvm 1    | 2019/07/25 18:51:34 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/07/25 18:51:34 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/07/25 18:51:34 | 
+INFO   | jvm 1    | 2019/07/25 18:51:35 | 18:51:35,544 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 18:51:35 | 18:51:35,547 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2019/07/25 18:51:35 | 18:51:35,547 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 18:51:35 | 18:51:35,575 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2019/07/25 18:51:36 | 18:51:36,833 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2019/07/25 18:51:37 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2019/07/25 18:51:37 | SLF4J: Found binding in [jar:file:/tmp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/25 18:51:37 | SLF4J: Found binding in [jar:file:/home/hsenid/Downloads/ideamart_developer_bundle/IdeaMart%20Simulator-v2.2/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/25 18:51:37 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2019/07/25 19:04:33 | Message key not found []
+INFO   | jvm 1    | 2019/07/25 19:04:33 | Message key not found []
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 19:04:41,018 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564061681017, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=aabbbb, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 19:04:41,169 ERROR AtRequestSender -  Error while sending message to application or application may not available for given port
+INFO   | jvm 1    | 2019/07/25 19:04:41 | org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:807)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:743)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:717)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:262)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:271)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:89)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at hms.kite.simulator.sms.SmsMessageSender.sendMessage(SmsMessageSender.java:44)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at hms.kite.simulator.webui.ui.services.impl.SmsNcsService.sendMessage(SmsNcsService.java:37)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at hms.kite.simulator.webui.ui.tab.impl.TabViewSmsImpl$2.buttonClick(TabViewSmsImpl.java:125)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at java.lang.reflect.Method.invoke(Method.java:498)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at com.vaadin.ui.Button.fireClick(Button.java:380)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at java.lang.Thread.run(Thread.java:748)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | Caused by: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:501)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:488)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:800)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 19:04:41 | Caused by: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:795)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 19:04:41 | Caused by: java.net.ConnectException: ConnectException invoking http://localhost:5556/mo-receiver: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1457)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1442)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:658)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	... 47 more
+INFO   | jvm 1    | 2019/07/25 19:04:41 | Caused by: java.net.ConnectException: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at java.net.Socket.connect(Socket.java:589)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1334)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1309)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1394)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1336)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1414)
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 	... 50 more
+INFO   | jvm 1    | 2019/07/25 19:04:41 | 19:04:41,185 INFO TabViewSmsImpl -  SMS sending status : Failed ........
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 19:04:51,287 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564061691287, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=aabbbb, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 19:04:51,293 ERROR AtRequestSender -  Error while sending message to application or application may not available for given port
+INFO   | jvm 1    | 2019/07/25 19:04:51 | org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:807)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:743)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:717)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:262)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:271)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:89)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at hms.kite.simulator.sms.SmsMessageSender.sendMessage(SmsMessageSender.java:44)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at hms.kite.simulator.webui.ui.services.impl.SmsNcsService.sendMessage(SmsNcsService.java:37)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at hms.kite.simulator.webui.ui.tab.impl.TabViewSmsImpl$2.buttonClick(TabViewSmsImpl.java:125)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at java.lang.reflect.Method.invoke(Method.java:498)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at com.vaadin.ui.Button.fireClick(Button.java:380)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at java.lang.Thread.run(Thread.java:748)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | Caused by: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:501)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:488)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:800)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 19:04:51 | Caused by: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:795)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	... 45 more
+INFO   | jvm 1    | 2019/07/25 19:04:51 | Caused by: java.net.ConnectException: ConnectException invoking http://localhost:5556/mo-receiver: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1457)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1442)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:658)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	... 47 more
+INFO   | jvm 1    | 2019/07/25 19:04:51 | Caused by: java.net.ConnectException: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at java.net.Socket.connect(Socket.java:589)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1334)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1309)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1394)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1336)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1414)
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 	... 50 more
+INFO   | jvm 1    | 2019/07/25 19:04:51 | 19:04:51,299 INFO TabViewSmsImpl -  SMS sending status : Failed ........
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 19:06:31,084 WARN JsonBodyProvider -  Null value received no way to parse this.
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 19:06:31,111 ERROR AbstractFaultChainInitiatorObserver -  Error occurred during error handling, give up!
+INFO   | jvm 1    | 2019/07/25 19:06:31 | org.apache.cxf.interceptor.Fault
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:122)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:344)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:310)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:943)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:879)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at java.lang.Thread.run(Thread.java:748)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | Caused by: java.lang.NullPointerException
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at hms.kite.simulator.sms.SmsMessageReceiver.decodeMessage(SmsMessageReceiver.java:165)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at hms.kite.simulator.sms.SmsMessageReceiver.onMessage(SmsMessageReceiver.java:46)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at hms.kite.simulator.rest.SmsNcsRestService.sendService(SmsNcsRestService.java:36)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at java.lang.reflect.Method.invoke(Method.java:498)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+INFO   | jvm 1    | 2019/07/25 19:06:31 | 	... 25 more
+INFO   | jvm 1    | 2019/07/25 19:12:34 | 19:12:34,044 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564062154044, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=aabbbb, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 19:12:34 | 19:12:34,056 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564062154044, encoding=0, applicationId=APP_000001, message=aabbbb, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190725191234, address=null, requestId=1564062154056, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564062154056, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/25 19:12:34 | 19:12:34,097 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 19:12:34 | 19:12:34,097 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 19:13:57 | 19:13:57,036 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94712480426, requestId=1564062237036, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=aabbbbcc, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 19:13:57 | 19:13:57,043 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94712480426, requestId=1564062237036, encoding=0, applicationId=APP_000001, message=aabbbbcc, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190725191357, address=null, requestId=1564062237043, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564062237043, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/25 19:13:57 | 19:13:57,045 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 19:13:57 | 19:13:57,045 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/25 19:14:28 | 19:14:28,228 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:9471248042600, requestId=1564062268228, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=aabbbbcc, version=1.0}] 
+INFO   | jvm 1    | 2019/07/25 19:14:28 | 19:14:28,235 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:9471248042600, requestId=1564062268228, encoding=0, applicationId=APP_000001, message=aabbbbcc, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190725191428, address=null, requestId=1564062268235, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564062268235, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/25 19:14:28 | 19:14:28,237 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/25 19:14:28 | 19:14:28,239 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+STATUS | wrapper  | 2019/07/25 19:15:20 | INT trapped.  Shutting down.
+INFO   | jvm 1    | 2019/07/25 19:15:20 | 19:15:20,455 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 19:15:20 | 19:15:20,456 INFO MchoiceSdpSdkStarter -  ============== mChoice SDP Simulator Stopped ===========
+INFO   | jvm 1    | 2019/07/25 19:15:20 | 19:15:20,456 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 19:15:21 | 19:15:21,222 INFO / -  Closing Spring root WebApplicationContext
+STATUS | wrapper  | 2019/07/25 19:15:21 | <-- Wrapper Stopped
+STATUS | wrapper  | 2019/07/25 19:15:26 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/07/25 19:15:26 | Launching a JVM...
+INFO   | jvm 1    | 2019/07/25 19:15:26 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/07/25 19:15:26 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/07/25 19:15:26 | 
+INFO   | jvm 1    | 2019/07/25 19:15:26 | 19:15:26,780 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 19:15:26 | 19:15:26,781 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2019/07/25 19:15:26 | 19:15:26,781 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 19:15:26 | 19:15:26,802 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2019/07/25 19:15:27 | 19:15:27,780 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2019/07/25 19:15:27 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2019/07/25 19:15:27 | SLF4J: Found binding in [jar:file:/tmp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/25 19:15:27 | SLF4J: Found binding in [jar:file:/home/hsenid/Downloads/ideamart_developer_bundle/IdeaMart%20Simulator-v2.2/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/25 19:15:27 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 19:16:34,804 WARN JsonBodyProvider -  Null value received no way to parse this.
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 19:16:34,817 ERROR AbstractFaultChainInitiatorObserver -  Error occurred during error handling, give up!
+INFO   | jvm 1    | 2019/07/25 19:16:34 | org.apache.cxf.interceptor.Fault
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:167)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:94)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:58)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:94)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:122)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.serviceRequest(JettyHTTPDestination.java:344)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:310)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:72)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:943)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:879)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at java.lang.Thread.run(Thread.java:748)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | Caused by: java.lang.NullPointerException
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at hms.kite.simulator.sms.SmsMessageReceiver.onMessage(SmsMessageReceiver.java:44)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at hms.kite.simulator.rest.SmsNcsRestService.sendService(SmsNcsRestService.java:36)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at java.lang.reflect.Method.invoke(Method.java:498)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+INFO   | jvm 1    | 2019/07/25 19:16:34 | 	... 25 more
+STATUS | wrapper  | 2019/07/25 19:18:23 | INT trapped.  Shutting down.
+INFO   | jvm 1    | 2019/07/25 19:18:23 | 19:18:23,297 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 19:18:23 | 19:18:23,298 INFO MchoiceSdpSdkStarter -  ============== mChoice SDP Simulator Stopped ===========
+INFO   | jvm 1    | 2019/07/25 19:18:23 | 19:18:23,298 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 19:18:24 | 19:18:24,069 INFO / -  Closing Spring root WebApplicationContext
+STATUS | wrapper  | 2019/07/25 19:18:24 | <-- Wrapper Stopped
+STATUS | wrapper  | 2019/07/25 19:18:32 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/07/25 19:18:32 | Launching a JVM...
+INFO   | jvm 1    | 2019/07/25 19:18:32 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/07/25 19:18:32 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/07/25 19:18:32 | 
+INFO   | jvm 1    | 2019/07/25 19:18:33 | 19:18:32,939 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 19:18:33 | 19:18:32,940 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2019/07/25 19:18:33 | 19:18:32,940 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 19:18:33 | 19:18:32,964 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2019/07/25 19:18:34 | 19:18:34,037 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2019/07/25 19:18:34 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2019/07/25 19:18:34 | SLF4J: Found binding in [jar:file:/tmp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/25 19:18:34 | SLF4J: Found binding in [jar:file:/home/hsenid/Downloads/ideamart_developer_bundle/IdeaMart%20Simulator-v2.2/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/25 19:18:34 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2019/07/25 19:19:04 | Message key not found []
+INFO   | jvm 1    | 2019/07/25 19:19:04 | Message key not found []
+STATUS | wrapper  | 2019/07/25 19:31:31 | INT trapped.  Shutting down.
+INFO   | jvm 1    | 2019/07/25 19:31:31 | 19:31:31,697 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 19:31:31 | 19:31:31,716 INFO MchoiceSdpSdkStarter -  ============== mChoice SDP Simulator Stopped ===========
+INFO   | jvm 1    | 2019/07/25 19:31:31 | 19:31:31,716 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/25 19:31:32 | 19:31:32,480 INFO / -  Closing Spring root WebApplicationContext
+STATUS | wrapper  | 2019/07/25 19:31:32 | <-- Wrapper Stopped
+STATUS | wrapper  | 2019/07/26 09:20:19 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/07/26 09:20:20 | Launching a JVM...
+INFO   | jvm 1    | 2019/07/26 09:20:22 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/07/26 09:20:22 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/07/26 09:20:22 | 
+INFO   | jvm 1    | 2019/07/26 09:20:22 | 09:20:22,916 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/26 09:20:23 | 09:20:22,934 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2019/07/26 09:20:23 | 09:20:22,934 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/26 09:20:23 | 09:20:22,996 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2019/07/26 09:20:24 | 09:20:24,407 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2019/07/26 09:20:24 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2019/07/26 09:20:24 | SLF4J: Found binding in [jar:file:/tmp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/26 09:20:24 | SLF4J: Found binding in [jar:file:/home/hsenid/training/ideamart_developer_bundle/IdeaMart%20Simulator-v2.2/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/26 09:20:24 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2019/07/26 09:20:43 | Message key not found []
+INFO   | jvm 1    | 2019/07/26 09:20:43 | Message key not found []
+INFO   | jvm 1    | 2019/07/26 09:21:25 | 09:21:25,246 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564113085245, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=12345, version=1.0}] 
+INFO   | jvm 1    | 2019/07/26 09:21:25 | 09:21:25,419 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564113085245, encoding=0, applicationId=APP_000001, message=12345, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190726092125, address=null, requestId=1564113085418, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564113085418, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 09:21:25 | 09:21:25,432 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/26 09:21:25 | 09:21:25,434 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/26 09:23:16 | 09:23:16,077 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564113196077, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=12345, version=1.0}] 
+INFO   | jvm 1    | 2019/07/26 09:23:16 | 09:23:16,082 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564113196077, encoding=0, applicationId=APP_000001, message=12345, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190726092316, address=null, requestId=1564113196082, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564113196082, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 09:23:16 | 09:23:16,084 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/26 09:23:16 | 09:23:16,084 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/26 09:24:28 | 09:24:28,686 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564113268686, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=qwerty, version=1.0}] 
+INFO   | jvm 1    | 2019/07/26 09:24:28 | 09:24:28,701 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564113268686, encoding=0, applicationId=APP_000001, message=qwerty, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190726092428, address=null, requestId=1564113268701, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564113268701, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 09:24:28 | 09:24:28,702 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/26 09:24:28 | 09:24:28,703 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/26 09:24:42 | 09:24:42,252 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564113282252, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=qwerty, version=1.0}] 
+INFO   | jvm 1    | 2019/07/26 09:24:42 | 09:24:42,260 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564113282252, encoding=0, applicationId=APP_000001, message=qwerty, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190726092442, address=null, requestId=1564113282260, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564113282260, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 09:24:42 | 09:24:42,262 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/26 09:24:42 | 09:24:42,265 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/26 09:32:00 | Message key not found []
+INFO   | jvm 1    | 2019/07/26 09:32:00 | Message key not found []
+STATUS | wrapper  | 2019/07/26 09:33:09 | INT trapped.  Shutting down.
+INFO   | jvm 1    | 2019/07/26 09:33:09 | 09:33:09,495 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/26 09:33:09 | 09:33:09,495 INFO MchoiceSdpSdkStarter -  ============== mChoice SDP Simulator Stopped ===========
+INFO   | jvm 1    | 2019/07/26 09:33:09 | 09:33:09,496 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/26 09:33:10 | 09:33:10,281 INFO / -  Closing Spring root WebApplicationContext
+STATUS | wrapper  | 2019/07/26 09:33:10 | <-- Wrapper Stopped
+STATUS | wrapper  | 2019/07/26 09:33:12 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/07/26 09:33:12 | Launching a JVM...
+INFO   | jvm 1    | 2019/07/26 09:33:13 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/07/26 09:33:13 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/07/26 09:33:13 | 
+INFO   | jvm 1    | 2019/07/26 09:33:13 | 09:33:13,420 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/26 09:33:13 | 09:33:13,421 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2019/07/26 09:33:13 | 09:33:13,421 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/26 09:33:13 | 09:33:13,442 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2019/07/26 09:33:14 | 09:33:14,405 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2019/07/26 09:33:14 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2019/07/26 09:33:14 | SLF4J: Found binding in [jar:file:/tmp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/26 09:33:14 | SLF4J: Found binding in [jar:file:/home/hsenid/training/ideamart_developer_bundle/IdeaMart%20Simulator-v2.2/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/26 09:33:14 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2019/07/26 09:33:20 | Message key not found []
+INFO   | jvm 1    | 2019/07/26 09:33:20 | Message key not found []
+INFO   | jvm 1    | 2019/07/26 09:39:12 | 09:39:12,939 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564114152938, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=Test Message, version=1.0}] 
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 09:39:12,991 ERROR AtRequestSender -  Error while sending message to application or application may not available for given port
+INFO   | jvm 1    | 2019/07/26 09:39:13 | org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:807)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:743)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:717)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:262)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:271)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:89)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at hms.kite.simulator.sms.SmsMessageSender.sendMessage(SmsMessageSender.java:44)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at hms.kite.simulator.webui.ui.services.impl.SmsNcsService.sendMessage(SmsNcsService.java:37)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at hms.kite.simulator.webui.ui.tab.impl.TabViewSmsImpl$2.buttonClick(TabViewSmsImpl.java:125)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at java.lang.reflect.Method.invoke(Method.java:498)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at com.vaadin.ui.Button.fireClick(Button.java:380)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at java.lang.Thread.run(Thread.java:748)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | Caused by: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:501)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:488)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:800)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	... 45 more
+INFO   | jvm 1    | 2019/07/26 09:39:13 | Caused by: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:795)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	... 45 more
+INFO   | jvm 1    | 2019/07/26 09:39:13 | Caused by: java.net.ConnectException: ConnectException invoking http://localhost:5556/mo-receiver: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1457)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1442)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:658)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	... 47 more
+INFO   | jvm 1    | 2019/07/26 09:39:13 | Caused by: java.net.ConnectException: Connection refused (Connection refused)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at java.net.Socket.connect(Socket.java:589)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1334)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1309)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1394)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1336)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1414)
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 	... 50 more
+INFO   | jvm 1    | 2019/07/26 09:39:13 | 09:39:12,997 INFO TabViewSmsImpl -  SMS sending status : Failed ........
+INFO   | jvm 1    | 2019/07/26 09:39:31 | 09:39:31,042 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564114171042, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=Test Message, version=1.0}] 
+INFO   | jvm 1    | 2019/07/26 09:39:31 | 09:39:31,059 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564114171042, encoding=0, applicationId=APP_000001, message=Test Message, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190726093931, address=null, requestId=1564114171059, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564114171059, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 09:39:31 | 09:39:31,068 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/26 09:39:31 | 09:39:31,070 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/26 09:39:43 | 09:39:43,763 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564114183763, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=Test Message2, version=1.0}] 
+INFO   | jvm 1    | 2019/07/26 09:39:43 | 09:39:43,772 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564114183763, encoding=0, applicationId=APP_000001, message=Test Message2, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190726093943, address=null, requestId=1564114183772, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564114183772, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 09:39:43 | 09:39:43,775 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/26 09:39:43 | 09:39:43,776 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/26 10:04:18 | 10:04:18,407 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564115658407, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=Test Message2, version=1.0}] 
+INFO   | jvm 1    | 2019/07/26 10:04:18 | 10:04:18,417 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564115658407, encoding=0, applicationId=APP_000001, message=Test Message2, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190726100418, address=null, requestId=1564115658417, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564115658417, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 10:04:18 | 10:04:18,420 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/26 10:04:18 | 10:04:18,421 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/26 10:04:33 | 10:04:33,919 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564115673919, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=Test Message32, version=1.0}] 
+INFO   | jvm 1    | 2019/07/26 10:04:33 | 10:04:33,927 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564115673919, encoding=0, applicationId=APP_000001, message=Test Message32, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190726100433, address=null, requestId=1564115673927, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564115673927, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 10:04:34 | 10:04:33,931 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/26 10:04:34 | 10:04:33,932 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/26 11:41:41 | 11:41:41,187 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94771122336], message=Hello, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726114141, address=tel:94771122336, requestId=1564121501187, statusDetail=Success, statusCode=S1000}], requestId=1564121501187, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 11:44:37 | 11:44:37,780 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94712480426], message=Hello, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726114437, address=tel:94712480426, requestId=1564121677780, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564121677780, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 11:45:09 | 11:45:09,548 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94779301596], message=Hello, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726114509, address=tel:94779301596, requestId=1564121709548, statusDetail=Success, statusCode=S1000}], requestId=1564121709548, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 11:45:40 | 11:45:40,229 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Hello, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726114540, address=tel:94772080786, requestId=1564121740228, statusDetail=Success, statusCode=S1000}], requestId=1564121740228, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 11:46:26 | 11:46:26,605 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Hello again, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726114626, address=tel:94772080786, requestId=1564121786605, statusDetail=Success, statusCode=S1000}], requestId=1564121786605, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 12:42:53 | 12:42:53,075 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Hello again, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726124253, address=tel:94772080786, requestId=1564125173075, statusDetail=Success, statusCode=S1000}], requestId=1564125173075, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 12:43:09 | 12:43:09,579 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Hello12345, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726124309, address=tel:94772080786, requestId=1564125189579, statusDetail=Success, statusCode=S1000}], requestId=1564125189579, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 12:44:34 | 12:44:34,284 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Hello123, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726124434, address=tel:94772080786, requestId=1564125274284, statusDetail=Success, statusCode=S1000}], requestId=1564125274284, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 12:51:17 | 12:51:17,351 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Hellooo, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726125117, address=tel:94772080786, requestId=1564125677351, statusDetail=Success, statusCode=S1000}], requestId=1564125677351, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 14:02:08 | 14:02:07,943 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Hellooow, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726140207, address=tel:94772080786, requestId=1564129927943, statusDetail=Success, statusCode=S1000}], requestId=1564129927943, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 14:27:10 | 14:27:10,266 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Your book ch1 is delayed by 1 days, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726142710, address=tel:94772080786, requestId=1564131430266, statusDetail=Success, statusCode=S1000}], requestId=1564131430266, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 14:27:10 | 14:27:10,283 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Your book 33 is delayed by 2 days, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726142710, address=tel:94772080786, requestId=1564131430283, statusDetail=Success, statusCode=S1000}], requestId=1564131430283, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 14:38:14 | 14:38:14,249 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Hellooow, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726143814, address=tel:94772080786, requestId=1564132094249, statusDetail=Success, statusCode=S1000}], requestId=1564132094249, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:05:39 | 15:05:39,741 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Your book ch1 is delayed by 1 days, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726150539, address=tel:94772080786, requestId=1564133739741, statusDetail=Success, statusCode=S1000}], requestId=1564133739741, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:05:39 | 15:05:39,758 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Your book 33 is delayed by 2 days, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726150539, address=tel:94772080786, requestId=1564133739758, statusDetail=Success, statusCode=S1000}], requestId=1564133739758, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:09:19 | 15:09:19,006 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Your book ch1 is delayed by 1 days, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726150919, address=tel:94772080786, requestId=1564133959006, statusDetail=Success, statusCode=S1000}], requestId=1564133959006, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:09:19 | 15:09:19,021 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Your book 33 is delayed by 2 days, applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726150919, address=tel:94772080786, requestId=1564133959021, statusDetail=Success, statusCode=S1000}], requestId=1564133959021, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:11:15 | 15:11:15,672 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Your book ch1 is delayed by 1 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726151115, address=tel:94772080786, requestId=1564134075672, statusDetail=Success, statusCode=S1000}], requestId=1564134075672, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:11:15 | 15:11:15,687 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94772080786], message=Your book 33 is delayed by 2 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726151115, address=tel:94772080786, requestId=1564134075687, statusDetail=Success, statusCode=S1000}], requestId=1564134075687, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:14:59 | 15:14:59,351 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:2222223333], message=Your book ch1 is delayed by 1 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726151459, address=tel:2222223333, requestId=1564134299351, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564134299351, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 15:14:59 | 15:14:59,366 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:0123456789], message=Your book 33 is delayed by 2 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726151459, address=tel:0123456789, requestId=1564134299366, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564134299366, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 15:18:16 | 15:18:16,072 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:2222223333], message=Your book ch1 is delayed by 1 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726151816, address=tel:2222223333, requestId=1564134496072, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564134496072, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 15:18:16 | 15:18:16,093 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:0123456789], message=Your book 33 is delayed by 2 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726151816, address=tel:0123456789, requestId=1564134496093, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564134496093, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 15:19:11 | 15:19:11,668 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:2222223333], message=Your book ch1 is delayed by 1 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726151911, address=tel:2222223333, requestId=1564134551668, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564134551668, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 15:19:11 | 15:19:11,685 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:0123456789], message=Your book 33 is delayed by 2 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726151911, address=tel:0123456789, requestId=1564134551685, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564134551685, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 15:23:56 | 15:23:56,553 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:0775268496], message=Your book ch1 is delayed by 1 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726152356, address=tel:0775268496, requestId=1564134836553, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564134836553, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 15:23:56 | 15:23:56,568 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:0779684521], message=Your book 33 is delayed by 2 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726152356, address=tel:0779684521, requestId=1564134836568, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564134836568, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 15:45:42 | 15:45:42,406 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94775268496], message=Your book ch1 is delayed by 1 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726154542, address=tel:94775268496, requestId=1564136142406, statusDetail=Success, statusCode=S1000}], requestId=1564136142406, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:45:42 | 15:45:42,428 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94779684521], message=Your book 33 is delayed by 2 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726154542, address=tel:94779684521, requestId=1564136142427, statusDetail=Success, statusCode=S1000}], requestId=1564136142427, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:46:53 | 15:46:53,747 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94775268496], message=Your book ch1 is delayed by 1 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726154653, address=tel:94775268496, requestId=1564136213747, statusDetail=Success, statusCode=S1000}], requestId=1564136213747, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:46:53 | 15:46:53,762 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94779684521], message=Your book 33 is delayed by 2 days., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726154653, address=tel:94779684521, requestId=1564136213762, statusDetail=Success, statusCode=S1000}], requestId=1564136213762, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:49:00 | 15:49:00,672 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94775268496], message=Your book ch1 is delayed by 1 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726154900, address=tel:94775268496, requestId=1564136340672, statusDetail=Success, statusCode=S1000}], requestId=1564136340672, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:49:00 | 15:49:00,688 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94770000521], message=Your book 33 is delayed by 2 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726154900, address=tel:94770000521, requestId=1564136340688, statusDetail=Success, statusCode=S1000}], requestId=1564136340688, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:56:17 | 15:56:17,662 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94771122336, requestId=1564136777662, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=Test Message32, version=1.0}] 
+INFO   | jvm 1    | 2019/07/26 15:56:17 | 15:56:17,700 INFO SmsNcsRestService -  Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564136777662, encoding=0, applicationId=APP_000001, message=Test Message32, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190726155617, address=null, requestId=1564136777700, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564136777700, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 15:56:17 | 15:56:17,703 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2019/07/26 15:56:17 | 15:56:17,704 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2019/07/26 15:58:45 | 15:58:45,596 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94775268496], message=Your book ch1 is delayed by 1 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726155845, address=tel:94775268496, requestId=1564136925596, statusDetail=Success, statusCode=S1000}], requestId=1564136925596, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 15:58:45 | 15:58:45,612 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94770000521], message=Your book 33 is delayed by 2 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726155845, address=tel:94770000521, requestId=1564136925612, statusDetail=Success, statusCode=S1000}], requestId=1564136925612, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 16:27:10 | 16:27:10,370 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94775268496], message=Your book ch1 is delayed by 1 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726162710, address=tel:94775268496, requestId=1564138630369, statusDetail=Success, statusCode=S1000}], requestId=1564138630369, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 16:27:10 | 16:27:10,390 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94710000521], message=Your book 33 is delayed by 2 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726162710, address=tel:94710000521, requestId=1564138630390, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564138630390, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 16:28:52 | 16:28:52,819 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94775268496], message=Your book ch1 is delayed by 1 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726162852, address=tel:94775268496, requestId=1564138732819, statusDetail=Success, statusCode=S1000}], requestId=1564138732819, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 16:28:52 | 16:28:52,835 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94710000521], message=Your book 33 is delayed by 2 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726162852, address=tel:94710000521, requestId=1564138732835, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564138732835, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+INFO   | jvm 1    | 2019/07/26 16:30:24 | 16:30:24,220 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94775268496], message=Your book ch1 is delayed by 1 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726163024, address=tel:94775268496, requestId=1564138824220, statusDetail=Success, statusCode=S1000}], requestId=1564138824220, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 16:30:24 | 16:30:24,238 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94770000521], message=Your book 33 is delayed by 2 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726163024, address=tel:94770000521, requestId=1564138824238, statusDetail=Success, statusCode=S1000}], requestId=1564138824238, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 17:23:26 | 17:23:26,736 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94775268496], message=Your book ch1 is delayed by 1 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726172326, address=tel:94775268496, requestId=1564142006736, statusDetail=Success, statusCode=S1000}], requestId=1564142006736, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2019/07/26 17:23:26 | 17:23:26,757 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=password, destinationAddresses=[tel:94770000521], message=Your book 33 is delayed by 2 days. Please return the book at your earliest possible., applicationId=APP_000001}], sent response back to application[{destinationResponses=[{timeStamp=20190726172326, address=tel:94770000521, requestId=1564142006757, statusDetail=Success, statusCode=S1000}], requestId=1564142006757, statusDetail=Success, version=1.0, statusCode=S1000}]
+STATUS | wrapper  | 2019/07/26 17:50:43 | INT trapped.  Shutting down.
+INFO   | jvm 1    | 2019/07/26 17:50:43 | 17:50:43,004 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/26 17:50:43 | 17:50:43,005 INFO MchoiceSdpSdkStarter -  ============== mChoice SDP Simulator Stopped ===========
+INFO   | jvm 1    | 2019/07/26 17:50:43 | 17:50:43,005 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/26 17:50:43 | 17:50:43,795 INFO / -  Closing Spring root WebApplicationContext
+STATUS | wrapper  | 2019/07/26 17:50:44 | <-- Wrapper Stopped
+STATUS | wrapper  | 2019/07/31 11:08:41 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/07/31 11:08:42 | Launching a JVM...
+INFO   | jvm 1    | 2019/07/31 11:08:43 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/07/31 11:08:43 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/07/31 11:08:43 | 
+INFO   | jvm 1    | 2019/07/31 11:08:43 | 11:08:43,556 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/31 11:08:43 | 11:08:43,557 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2019/07/31 11:08:43 | 11:08:43,557 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/31 11:08:43 | 11:08:43,578 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2019/07/31 11:08:44 | 11:08:44,813 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2019/07/31 11:08:45 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2019/07/31 11:08:45 | SLF4J: Found binding in [jar:file:/tmp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/31 11:08:45 | SLF4J: Found binding in [jar:file:/home/hsenid/training/angularProj/library-management-system-backend/LibraryServer/IdeaMart%20Simulator-v2.2/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/07/31 11:08:45 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+STATUS | wrapper  | 2019/07/31 11:08:54 | INT trapped.  Shutting down.
+INFO   | jvm 1    | 2019/07/31 11:08:54 | 11:08:54,585 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/31 11:08:54 | 11:08:54,585 INFO MchoiceSdpSdkStarter -  ============== mChoice SDP Simulator Stopped ===========
+INFO   | jvm 1    | 2019/07/31 11:08:54 | 11:08:54,585 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2019/07/31 11:08:55 | 11:08:55,351 INFO / -  Closing Spring root WebApplicationContext
+STATUS | wrapper  | 2019/07/31 11:08:55 | <-- Wrapper Stopped

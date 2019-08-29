@@ -1,0 +1,10 @@
+25 Jul 2019 16:11:32,707 INFO  [][qtp234845801-44] AtRequestSender - Sending Request [{sourceAddress=tel:94771122336, requestId=1564051292707, deliveryStatusRequest=null, encoding=0, applicationId=APP_000001, message=this is a message to me, version=1.0}] 
+25 Jul 2019 16:11:32,740 INFO  [][qtp193597741-23] SmsNcsRestService - Received SMS message to send to customer[{sourceAddress=tel:94771122336, requestId=1564051292707, encoding=0, applicationId=APP_000001, message=this is a message to me, version=1.0}], sent response back to application[{destinationResponses=[{timeStamp=20190725161132, address=null, requestId=1564051292738, statusDetail=Invalid MSISDN Error, statusCode=E1325}], requestId=1564051292738, statusDetail=Invalid MSISDN Error, version=1.0, statusCode=E1325}]
+25 Jul 2019 16:11:32,744 INFO  [][qtp234845801-44] AtRequestSender - Message Successfully sent
+25 Jul 2019 16:11:32,744 INFO  [][qtp234845801-44] TabViewSmsImpl - SMS sending status : SUCCESS.......
+25 Jul 2019 16:36:50,855 INFO  [][qtp234845801-41] AtRequestSender - Response: {"requestId":"11907251636507348","statusDetail":"Default Error has occurred.","version":"1.0","statusCode":"E1300"}
+25 Jul 2019 16:36:50,855 INFO  [][qtp234845801-41] AtRequestSender - Message Successfully sent
+25 Jul 2019 16:36:50,855 INFO  [][qtp234845801-41] TabViewSmsImpl - SMS sending status : SUCCESS.......
+25 Jul 2019 16:36:52,211 INFO  [][qtp234845801-44] AtRequestSender - Response: {"requestId":"11907251636527473","statusDetail":"Default Error has occurred.","version":"1.0","statusCode":"E1300"}
+25 Jul 2019 16:36:52,211 INFO  [][qtp234845801-44] AtRequestSender - Message Successfully sent
+25 Jul 2019 16:36:52,211 INFO  [][qtp234845801-44] TabViewSmsImpl - SMS sending status : SUCCESS.......

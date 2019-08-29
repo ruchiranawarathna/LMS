@@ -1,0 +1,9 @@
+31 Jul 2019 11:08:43,556 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+31 Jul 2019 11:08:43,557 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ============= mChoice SDP Simulator Started ============
+31 Jul 2019 11:08:43,557 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+31 Jul 2019 11:08:43,578 INFO  [][Thread-0] JettyServerStarter - Starting mChoice SDP SDK Server on Port[10001]
+31 Jul 2019 11:08:44,813 INFO  [][Thread-0] / - Initializing Spring root WebApplicationContext
+31 Jul 2019 11:08:54,585 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ========================================================
+31 Jul 2019 11:08:54,585 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ============== mChoice SDP Simulator Stopped ===========
+31 Jul 2019 11:08:54,585 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ========================================================
+31 Jul 2019 11:08:55,351 INFO  [][Thread-1] / - Closing Spring root WebApplicationContext
