@@ -1,0 +1,27 @@
+<button class="btn btn-primary" (click)="onGetUsers()">Show Users</button>
+<button class="btn btn-primary" *ngIf="showClicked" (click)="onDownload()">Download</button>
+<div class="alert alert-success" *ngIf="downloadCompleted"> User List Downloaded Successfully.</div>
+
+<table class="table table-sm" *ngIf="showClicked">
+    <thead>
+        <th>Index</th>
+        <th>UserId</th>
+        <th>Name</th>
+        <th>Contact</th>
+        <th>Address</th>
+        <th></th>
+    </thead>
+    <ng-container *ngFor="let user of this.userService.userList; let i= index">
+        <tr class="table-dark">
+            <td> {{i+1}} </td>
+            <td>{{user.userId}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.contact}}</td>
+            <td>{{user.address}}</td>
+            <td>
+                <button class="btn btn-info" (click)="onEdit(user)">Edit</button>
+                <button class="btn btn-danger" (click)="onDelete(user)">Remove</button>
+            </td>
+        </tr>
+    </ng-container>
+</table>

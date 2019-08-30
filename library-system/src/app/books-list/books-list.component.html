@@ -1,0 +1,26 @@
+<button class="btn btn-primary" (click)="onGetBooks()">Show Books</button>
+<button class="btn btn-primary" *ngIf="showClicked" (click)="onDownload()">Download</button>
+<div class="alert alert-success" *ngIf="downloadCompleted"> Book List Downloaded Successfully.</div>
+<table class="table table-sm" *ngIf="showClicked">
+    <thead>
+        <th>Index</th>
+        <th>Code</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th></th>
+    </thead>
+    <ng-container *ngFor="let book of this.bookService.bookList; let i= index">
+        <tr class="table-dark">
+            <td> {{i+1}} </td>
+            <td>{{book.code}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.category}}</td>
+            <td>
+                <button class="btn btn-info" (click)="onEdit(book)">Edit</button>
+                <button class="btn btn-danger" (click)="onDelete(book)">Remove</button>
+            </td>
+        </tr>
+    </ng-container>
+</table>

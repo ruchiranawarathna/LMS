@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-sm"></div>
+    <form [formGroup]=this.lendingService.lend_form (ngSubmit)="onSubmit()">
+        <br>
+        <div class="form-group">
+            <label>User ID</label><br>
+            <input formControlName="userId"  [ngClass]="{'is-invalid':submitted && formControls.userId.errors}">  
+            <div class="invalid-feedback" *ngIf="submitted && formControls.userId.errors">
+                <label class="text-danger" *ngIf="formControls.userId.errors.required"> This field is required</label>
+                <label class="text-danger" *ngIf="formControls.userId.errors.pattern"> Special charactes are not accepted </label>
+            </div>
+        </div>
+        <div class="form-group">
+                <label>Book Code</label><br>
+                <input formControlName="bookCode"  [ngClass]="{'is-invalid':submitted && formControls.bookCode.errors}">  
+                <div class="invalid-feedback" *ngIf="submitted && formControls.bookCode.errors">
+                    <label class="text-danger" *ngIf="formControls.bookCode.errors.required"> This field is required</label>
+                    <label class="text-danger" *ngIf="formControls.bookCode.errors.pattern"> Special charactes are not accepted </label>
+                </div>
+        </div>
+        <div class="form-group">
+                <input type="submit" class="btn btn-primary" [disabled]="!this.lendingService.lend_form.valid" value="Submit">
+                <div class="alert alert-danger" *ngIf="invalidUserID">Invalid User ID.</div>
+                <div class="alert alert-danger" *ngIf="invalidBookCode">Invalid Book Code.</div>
+                <div class="alert alert-danger" *ngIf="bookNotAvailable">Book is not available.</div>
+        </div> 
+
+    </form>
+    <div class="alert alert-success" *ngIf="showSuccessMessage">Book Lended Successfully.</div>
+</div>
+

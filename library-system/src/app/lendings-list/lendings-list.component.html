@@ -1,0 +1,32 @@
+
+<button class="btn btn-primary" (click)="onGetLends()">Show Lendings</button>
+<button class="btn btn-primary" *ngIf="showClicked" (click)="onDownload()">Download</button>
+<div class="alert alert-success" *ngIf="downloadCompleted"> Lend List Downloaded Successfully.</div>
+
+<table class="table table-sm" *ngIf="showClicked">
+    <thead>
+        <th>Lend ID</th>
+        <th>User ID</th>
+        <th>Book Code</th>
+        <th>Issue Date</th>
+        <th>Due Date</th>
+        <th>Delay</th>
+        <th>Fine (Rs.)</th>
+        <th></th>
+    </thead>
+    <ng-container *ngFor="let lend of this.lendingService.lendingList">
+        <tr class="table-dark" [ngClass]="{'text-danger':lend.delay > 0 }">
+            <td>{{lend.lendId}}</td>
+            <td>{{lend.userId}}</td>
+            <td>{{lend.bookCode}}</td>
+            <td>{{lend.issueDate}}</td>
+            <td>{{lend.dueDate}}</td>
+            <td>{{lend.delay}}</td>
+            <td>{{lend.fine}}</td>
+            <td>
+                <button class="btn btn-info" (click)="onEdit(lend)">Edit</button>
+                <button class="btn btn-success" (click)="onReturn(lend)">Return</button>
+            </td>
+        </tr>
+    </ng-container>
+</table>

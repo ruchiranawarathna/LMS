@@ -1,0 +1,53 @@
+<div class="container" *ngIf="!this.loginService.isLoginSuccess">
+  <div class="row">
+      <div class="col-sm-2">
+        <app-login></app-login>
+      </div>
+    </div>
+</div>
+
+<mat-tab-group disableRipple *ngIf="this.loginService.isLoginSuccess">
+  <mat-tab label="BOOKS"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+              <app-books></app-books>
+            </div>
+            <div class="col-sm-10">
+               <app-books-list></app-books-list> 
+            </div>
+          </div>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="USERS">  
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-2">
+            <app-users></app-users>
+          </div>
+          <div class="col-sm-10">
+             <app-users-list></app-users-list> 
+          </div>
+        </div>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="LENDS">  
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-2">
+                <app-lendings></app-lendings>
+              </div>
+              <div class="col-sm-8">
+                 <app-lendings-list></app-lendings-list> 
+              </div>
+              <div class="col-sm-2">
+                <app-lending-options></app-lending-options>
+              </div>
+            </div>
+      </div>
+
+  </mat-tab>
+
+</mat-tab-group>

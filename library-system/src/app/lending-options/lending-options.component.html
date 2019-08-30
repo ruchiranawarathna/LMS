@@ -1,0 +1,30 @@
+<button class="btn btn-primary" (click)="onUpdateSettings()">Update Settings</button>
+<div *ngIf="showSettings" class="options">
+    <h4 class="text-xs-left">Settings</h4>
+
+    <form [formGroup]=this.lendingService.settings_form (ngSubmit)="onOptionChange()">
+        <fieldset [disabled]="isSubmitting">     
+        <fieldset class="form-group">
+            <label>Fine Per Day (Rs.)</label>
+            <input class="form-control form-control-lg"
+            type="number"
+            placeholder="Fine Per Day (Rs.)"
+            formControlName="finePerDay" 
+            [ngClass]="{'is-invalid':formControls.finePerDay.errors}"/>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label>Issue Period (Days)</label>
+            <input class="form-control form-control-lg"
+            type="number"
+            placeholder="Issue Period (Days)"
+            formControlName="issuePeriod" 
+            [ngClass]="{'is-invalid':formControls.issuePeriod.errors}"/>
+        </fieldset>
+        
+        <button class="btn btn-primary" [disabled]="!this.lendingService.settings_form.valid" type="submit">Update</button>
+        </fieldset>
+    </form>
+    <div class="alert alert-success" *ngIf="showSuccessMessage">Settings updated.</div>
+    <!-- <hr /> -->
+</div>

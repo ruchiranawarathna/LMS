@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-sm"></div>
+        <form [formGroup]="this.bookService.book_form" (ngSubmit)="onSubmit()"> 
+            <br>
+            <div class="form-group">
+                    <label  *ngIf="!this.bookService.isEditAction">Code</label><br>
+                    <input formControlName="code" [ngClass]="{'is-invalid':submitted && formControls.code.errors}" *ngIf="!this.bookService.isEditAction">
+                    <div class="invalid-feedback" *ngIf="submitted && formControls.code.errors">
+                        <label class="text-danger" *ngIf="formControls.code.errors.required"> This field is required</label>
+                        <label class="text-danger" *ngIf="formControls.code.errors.pattern"> Special charactes are not accepted </label>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label>Title</label><br>
+                <input formControlName="title" [ngClass]="{'is-invalid':submitted && formControls.title.errors}">
+                <div class="invalid-feedback" *ngIf="submitted && formControls.title.errors">
+                    <label class="text-danger" *ngIf="formControls.title.errors.required"> This field is required</label>
+                    <label class="text-danger" *ngIf="formControls.title.errors.pattern"> Special charactes are not accepted </label>
+                </div>
+                    
+            </div>
+            <div class="form-group">
+                <label>Author</label><br>
+                <input formControlName="author" [ngClass]="{'is-invalid':submitted && formControls.author.errors}">
+                <div class="invalid-feedback" *ngIf="submitted && formControls.author.errors">
+                    <label class="text-danger" *ngIf="formControls.author.errors.required"> This field is required</label>
+                    <label class="text-danger" *ngIf="formControls.author.errors.pattern"> Special charactes are not accepted </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Category</label><br>
+                <select class="select-css" formControlName="category">
+                    <option *ngFor="let category of categories; let i = index" [value]="categories[i]">
+                      {{categories[i]}}
+                    </option>
+                  </select>
+                <div class="invalid-feedback" *ngIf="submitted && formControls.category.errors">
+                    <label class="text-danger" *ngIf="formControls.category.errors.required"> This field is required</label>
+                </div>
+            </div>   
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" [disabled]="!this.bookService.book_form.valid" value="Submit">
+            </div> 
+        </form>
+        <div class="alert alert-success" *ngIf="showSuccessMessage"> Book Added Successfully.</div>
+        <div class="alert alert-danger" *ngIf="showFailureMessage">Book Submission Failed.</div>
+        <div class="alert alert-danger" *ngIf="duplicateBookCode">Book Code Already Exist.</div>
+</div>

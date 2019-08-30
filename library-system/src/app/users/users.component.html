@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-sm"></div>
+        <form [formGroup]="this.userService.user_form" (ngSubmit)="onSubmit()"> 
+            <br>
+            <div class="form-group">
+                    <label  *ngIf="!this.userService.isEditAction">User ID</label><br>
+                    <input formControlName="userId" [ngClass]="{'is-invalid':submitted && formControls.userId.errors}" *ngIf="!this.userService.isEditAction">
+                    <div class="invalid-feedback" *ngIf="submitted && formControls.userId.errors">
+                        <label class="text-danger" *ngIf="formControls.userId.errors.required"> This field is required</label>
+                        <label class="text-danger" *ngIf="formControls.userId.errors.pattern"> Special charactes are not accepted </label>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label>Name</label><br>
+                <input formControlName="name" [ngClass]="{'is-invalid':submitted && formControls.name.errors}">
+                <div class="invalid-feedback" *ngIf="submitted && formControls.name.errors">
+                    <label class="text-danger" *ngIf="formControls.name.errors.required"> This field is required</label>
+                    <label class="text-danger" *ngIf="formControls.name.errors.pattern"> Special charactes are not accepted </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Contact</label><br>
+                <input formControlName="contact" [ngClass]="{'is-invalid':submitted && formControls.contact.errors}">
+                <div class="invalid-feedback" *ngIf="submitted && formControls.contact.errors">
+                    <label class="text-danger" *ngIf="formControls.contact.errors.required"> This field is required</label>
+                    <label class="text-danger" *ngIf="formControls.contact.errors.minlength"> Contact should be a 10 digit value</label>
+                    <label class="text-danger" *ngIf="formControls.contact.errors.maxlength"> Contact should be a 10 digit value</label>
+                    <label class="text-danger" *ngIf="formControls.contact.errors.pattern"> Only numbers are accepted </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Address</label><br>
+                <input formControlName="address" [ngClass]="{'is-invalid':submitted && formControls.address.errors}">
+                <div class="invalid-feedback" *ngIf="submitted && formControls.address.errors">
+                    <label class="text-danger" *ngIf="formControls.address.errors.required"> This field is required</label>
+                    <label class="text-danger" *ngIf="formControls.address.errors.pattern"> Special charactes are not accepted </label>
+                </div>
+            </div>   
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" [disabled]="!this.userService.user_form.valid" value="Submit">
+            </div> 
+        </form>
+        <div class="alert alert-success" *ngIf="showSuccessMessage">User Added Successfully.</div>
+        <div class="alert alert-danger" *ngIf="showFailureMessage"> User Submission Failed. </div>
+        <div class="alert alert-danger" *ngIf="duplicateUserID"> User ID already exist. </div>
+</div>
